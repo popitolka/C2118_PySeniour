@@ -11,15 +11,13 @@ class Marker:
 
     def getInfo(self):
         if self.isAvailable:
-            print(f'\tcolor-{self.colo}  thk - {self.thikness}')
+            print(f'\tcolor-{self.color}  thk - {self.thikness}')
         else:
              print('\tthis marker is absent in storage')
 
 
-
-
 markerRed = Marker('red', 2)
-markerRed.get_info()
+markerRed.getInfo()
 markerRed.color = 'black'
-markerRed.get_info()
+markerRed.getInfo()
 
